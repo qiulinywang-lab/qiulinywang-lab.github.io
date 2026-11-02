@@ -1,5 +1,5 @@
 /* Public ciphertext delivery; content is decrypted only with the link's random key. */
-const RELEASE = '3d3c5ffa0379';
+const RELEASE = '93f82d577eeb';
 const ROOT = self.registration.scope;
 let manifestPromise;
 const manifests = () => manifestPromise ||= fetch(new URL('manifest.json',ROOT),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();});
